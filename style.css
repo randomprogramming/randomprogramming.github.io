@@ -133,6 +133,7 @@ code {
 	border-radius: 5px;
 	font-family: monospace !important;
 	font-size: 12px !important;
+	white-space: nowrap;
 }
 
 body {
@@ -268,6 +269,15 @@ main > section {
 	border: 2px solid #d8e6eb;
 	margin: 7px 0;
 	width: 600px;
+}
+
+.element-listing {
+	list-style: disc;
+	margin-left: 3rem;
+}
+
+.element-listing > li {
+	margin: 3px 0;
 }
 
 footer {
