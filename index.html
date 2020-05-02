@@ -69,9 +69,9 @@
 					sredstvo za stvaranje strukturiranih dokumenata označavanjem strukturne semantike teksta
 					kao što su: naslovi, odlomci, popisi, poveznice, citati i druge oznake. HTML elementi su
 					razgraničeni oznakama, napisane uglastim zagradama. Oznake kao što su
-					<code>&ltimg /></code> i
-					<code>&ltinput /></code> izravno uvežu sadržaj u stranicu. Ostale
-					oznake kao što <code>&ltp ></code> okružuju i pružaju informacije o
+					<code>&lt;img /></code> i
+					<code>&lt;input /></code> izravno uvežu sadržaj u stranicu. Ostale
+					oznake kao što <code>&lt;p ></code> okružuju i pružaju informacije o
 					tekstu dokumenta, a može sadržavati i druge oznake kao pod-elemente. Preglednici ne
 					prikazuju HTML oznake, ali koristite ih za tumačenje sadržaja stranice.
 				</p>
@@ -98,8 +98,8 @@
 					</div>
 				</p>
 				<p class="margined-paragraph">
-					Sljedeče, dodane su nove semantičke oznake. Oznake poput <code>&ltsection /></code>, <code>&ltarticle /></code>,
-					<code>&ltfooter /></code> pomažu nam bolje rasporediti elemente unutar HTML dokumenta te svakom elementu
+					Sljedeče, dodane su nove semantičke oznake. Oznake poput <code>&lt;section /></code>, <code>&lt;article /></code>,
+					<code>&lt;footer /></code> pomažu nam bolje rasporediti elemente unutar HTML dokumenta te svakom elementu
 					zadati njegovu svrhu, kako bi znali točno čemu svaki element služi. Uz pomoć ovih oznaka, tipična HTML5 stranica
 					bi otprilike izgledala ovako:
 					<div class="paragraph-image" style="width: 200px;">
@@ -107,19 +107,19 @@
 					</div>
 					sa značenjem:
 					<ol class="element-listing">
-						<li><code>&ltheader></code> - <span>
+						<li><code>&lt;header></code> - <span>
 							predstavlja skup uvodnih ili navigacijskih pomagala, u većini slučaja bi sadržavao logotip ili ime tvrtke
 						</span></li>
-						<li><code>&ltnav></code> - <span>predstavlja odjeljak dokumenta namijenjen navigaciji</span></li>
-						<li><code>&ltsection></code> - <span>predstavlja generički dokument ili odjeljak web stranice. Koristimo ga zajedno s elementima <code>&lth1 /></code>, <code>&lth2 /></code>, <code>&lth3 /></code>,<code>&lth4 /></code>, <code>&lth5 /></code> i <code>&lth6 /></code> za označavanje strukture dokumenta</span></li>
-						<li><code>&ltarticle></code> - <span>predstavlja neovisan dio dokumenta dokumenta, poput bloga ili članaka u novinama</span></li>
-						<li><code>&ltaside></code> - <span>predstavlja dio sadržaja koji je tek neznatno povezan s ostatkom stranice, primjer bi bio navigacija unutar jedne web stranice</span></li>
-						<li><code>&ltfooter></code> - <span>predstavlja podnožje za odjeljak i može sadržavati podatke o autoru, autorskim pravima i ostale informacije</span></li>
+						<li><code>&lt;nav></code> - <span>predstavlja odjeljak dokumenta namijenjen navigaciji</span></li>
+						<li><code>&lt;section></code> - <span>predstavlja generički dokument ili odjeljak web stranice. Koristimo ga zajedno s elementima <code>&lt;h1 /></code>, <code>&lt;h2 /></code>, <code>&lt;h3 /></code>,<code>&lt;h4 /></code>, <code>&lt;h5 /></code> i <code>&lt;h6 /></code> za označavanje strukture dokumenta</span></li>
+						<li><code>&lt;article></code> - <span>predstavlja neovisan dio dokumenta dokumenta, poput bloga ili članaka u novinama</span></li>
+						<li><code>&lt;aside></code> - <span>predstavlja dio sadržaja koji je tek neznatno povezan s ostatkom stranice, primjer bi bio navigacija unutar jedne web stranice</span></li>
+						<li><code>&lt;footer></code> - <span>predstavlja podnožje za odjeljak i može sadržavati podatke o autoru, autorskim pravima i ostale informacije</span></li>
 					</ol>
 				</p>
 				<p class="margined-paragraph">
-					Prijašnje spomenut <code>&ltinput /></code> element, koji služi za korisnički unos datuma, e-maila i drugih informacija
-					, je dobio nekoliko novih tipova. Oni se koriste na sljedeči način: <code>&ltinput type="tip_unosa" /></code>
+					Prijašnje spomenut <code>&lt;input /></code> element, koji služi za korisnički unos datuma, e-maila i drugih informacija
+					, je dobio nekoliko novih tipova. Oni se koriste na sljedeči način: <code>&lt;input type="tip_unosa" /></code>
 						<ol class="input-types-list">
 						<strong><h2>Novi tipovi unosa</h2></strong>
 						<li><strong>tel</strong> - definira polje za unos telefonskog broja
@@ -162,9 +162,9 @@
 				</p>
 				<p class="margined-paragraph">
 					HTML5 je također uveo neke nove atribute. Atributi su svojstva koja modificiraju neki element, na primjer,
-					gore spomenut <code>&ltinput type="tip_unosa" /></code> ima atribut <code>type</code> uz mnoge druge. Među
-					najvažnijim novim atributima je <code>required</code>, koji se može stavit uz element  <code>&ltinput /></code>.
-					On zahtijeva da neki <code>&ltinput /></code> element mora imati vrijednost prije nego što se forma preda.
+					gore spomenut <code>&lt;input type="tip_unosa" /></code> ima atribut <code>type</code> uz mnoge druge. Među
+					najvažnijim novim atributima je <code>required</code>, koji se može stavit uz element  <code>&lt;input /></code>.
+					On zahtijeva da neki <code>&lt;input /></code> element mora imati vrijednost prije nego što se forma preda.
 					<form style="display: flex; flex-direction: column; width: 48%;">
 						<input required type="text" placeholder="Ime" style="margin-bottom: 4px;"/>
 						<input required type="text" placeholder="Prezime" style="margin-bottom: 4px;"/>
@@ -172,7 +172,10 @@
 						<input type="submit" value="Predaj" style="margin-bottom: 4px;"/>
 					</form>
 					<p>Pošto elementi u ovoj formi imaju <code>required</code> atribut, forma se ne može predat ukoliko je neko
-					polje prazno.</p>
+					polje prazno. Gore navedeni elementi također sadrže još jedan novi atribut, <code>placeholder</code>.
+				<code>placeholder</code> je namijenjen kako bi korisniku rekao što se treba nalaziti unutar tog elementa. 
+			<div><form><input required type="text" placeholder="Ime" style="margin: 4px 0px;"/></form></div> Navedeni element ima <code>placeholder="Ime"</code>
+		te on izgleda ovako: <code>&lt;input required type="text" placeholder="Ime"/></code></p>
 				</p>
 			</section>
 			<section>
