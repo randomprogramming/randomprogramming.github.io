@@ -127,6 +127,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+strong {
+	font-weight: bold !important;
+}
+
 code {
 	padding: 2px 5px;
 	background-color: #c9c9c9;
@@ -278,6 +283,14 @@ main > section {
 
 .element-listing > li {
 	margin: 3px 0;
+}
+
+.input-types-list {
+	margin-left: 1rem;
+	list-style-type: disc;
+}
+.input-types-list > li {
+	margin-top: 0.5rem;
 }
 
 footer {
