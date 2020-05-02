@@ -119,7 +119,7 @@
 				</p>
 				<p class="margined-paragraph">
 					Prijašnje spomenut <code>&ltinput /></code> element, koji služi za korisnički unos datuma, e-maila i drugih informacija
-					, je dobio nekoliko novih tipova. Oni se koriste na sljedeči način: <code>&ltinput type="tip_unosa"/></code>
+					, je dobio nekoliko novih tipova. Oni se koriste na sljedeči način: <code>&ltinput type="tip_unosa" /></code>
 						<ol class="input-types-list">
 						<strong><h2>Novi tipovi unosa</h2></strong>
 						<li><strong>tel</strong> - definira polje za unos telefonskog broja
@@ -159,6 +159,20 @@
 							<div><form><input type="color"/></form></div>
 						</li>
 					</ol>
+				</p>
+				<p class="margined-paragraph">
+					HTML5 je također uveo neke nove atribute. Atributi su svojstva koja modificiraju neki element, na primjer,
+					gore spomenut <code>&ltinput type="tip_unosa" /></code> ima atribut <code>type</code> uz mnoge druge. Među
+					najvažnijim novim atributima je <code>required</code>, koji se može stavit uz element  <code>&ltinput /></code>.
+					On zahtijeva da neki <code>&ltinput /></code> element mora imati vrijednost prije nego što se forma preda.
+					<form style="display: flex; flex-direction: column; width: 48%;">
+						<input required type="text" placeholder="Ime" style="margin-bottom: 4px;"/>
+						<input required type="text" placeholder="Prezime" style="margin-bottom: 4px;"/>
+						<input required type="number" placeholder="Semestar" style="margin-bottom: 4px;"/>
+						<input type="submit" value="Predaj" style="margin-bottom: 4px;"/>
+					</form>
+					<p>Pošto elementi u ovoj formi imaju <code>required</code> atribut, forma se ne može predat ukoliko je neko
+					polje prazno.</p>
 				</p>
 			</section>
 			<section>
