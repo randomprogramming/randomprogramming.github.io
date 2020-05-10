@@ -177,6 +177,37 @@
 			<div><form><input required type="text" placeholder="Ime" style="margin: 4px 0px;"/></form></div> Navedeni element ima <code>placeholder="Ime"</code>
 		te on izgleda ovako: <code>&lt;input required type="text" placeholder="Ime"/></code></p>
 				</p>
+				<p class="margined-paragraph">
+					Još neki od važnih elemenata dodanih u HTML5 su <code>&lt;video /></code> i <code>&lt;audio /></code>.
+					Ukratko, oni nam daju mogućnost reproduciranja videja i zvuka. Uz njih dolazi još i element <code>&lt;source /></code>,
+					koji pokazuje na video ili audio datoteku koju želimo reproducirati.
+					Kako bi prikazali neki video na web stranici, koristimo <code>&lt;video /></code> element na sljedeči način:
+				</p>
+				<p>
+					<code>
+						&lt;video controls width="250"><br />
+
+    &nbsp;&nbsp;&lt;source src="media/examples/flower.webm"
+            type="video/webm"><br />
+
+    &nbsp;&nbsp;&lt;source src="media/examples/flower.mp4"
+            type="video/mp4"><br />
+
+    &nbsp;&nbsp;Sorry, your browser doesn't support embedded videos.<br />
+&lt;/video>
+					</code>
+				</p>
+				<p class="margined-paragraph">
+					Gdje atribut <code>controls</code> znači da će preglednik ponuditi kontrole za kontroliranje
+					reprodukcije, zvuka, pauziranje i ostale mogućnosti. U ovom slučaju smo koristili više <code>&lt;source /></code>
+					elementa sa različitim izvorima. Preglednik će odabrati prvi format izvora kojeg prepozna. Ukoliko preglednik
+					ne prepozne niti jedan od izvora, prikazat će poruku da se video ne može reproducirat.
+				</p>
+				<video controls width="250">
+    			<source src="https://interactive-examples.mdn.mozilla.net/media/examples/flower.webm" type="video/webm">
+    			<source src="https://interactive-examples.mdn.mozilla.net/media/examples/flower.mp4" type="video/mp4">
+    			Sorry, your browser doesn't support embedded videos.
+				</video>
 			</section>
 			<section>
 				<h1 class="version-header" id="html-5-1">HTML 5.1</h1>

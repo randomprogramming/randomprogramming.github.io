@@ -145,7 +145,7 @@ body {
 	font-family: "Work Sans", sans-serif;
 	color: #353535;
 	background-color: #ececec;
-	/* min-width: 800px; */
+	/* min-width: 552px; */
 }
 
 nav {
@@ -356,5 +356,8 @@ footer a {
 	}
 	.paragraph-image {
 		max-width: 200px;
+	}
+	code {
+		white-space: normal;
 	}
 }
