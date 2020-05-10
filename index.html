@@ -23,7 +23,7 @@
 
 		<aside>
 			<div>
-				<h3 class="navigation-title">Navigation</h3>
+				<h3 class="navigation-title">Navigacija</h3>
 			</div>
 			<ul>
 				<li>
@@ -33,7 +33,16 @@
 					<a href="#html-5-0" class="inner-nav-link">HTML 5.0</a>
 					<ul>
 						<li>
-							<a href="#differences-4-5" class="inner-nav-link">Razlike između HTML4 i HTML5</a>
+							<a href="#new-syntax" class="inner-nav-link">Novi syntax</a>
+						</li>
+						<li>
+							<a href="#new-semantic" class="inner-nav-link">Semantičke oznake</a>
+						</li>
+						<li>
+							<a href="#new-input" class="inner-nav-link">Tipovi unosa</a>
+						</li>
+						<li>
+							<a href="#new-audio-video" class="inner-nav-link">Audio i video</a>
 						</li>
 					</ul>
 				</li>
@@ -85,7 +94,7 @@
 					 na istraživanju prevladavajuće autorske prakse, a posebna pažnja posvećena je definiranju jasnih kriterija
 					  usklađenosti za korisničke agente u nastojanju da se poboljša interoperabilnost.
 				</p>
-				<h2 class="sub-header" id="differences-4-5">Razlike između HTML4 i HTML5</h2>
+				<h2 class="sub-header" id="new-syntax">Novi syntax</h2>
 				<p class="margined-paragraph">
 					Prva razlika u novoj verziji HTML-a je sam izgled HTML dokumenta. Unesen je novi način
 					deklariranja HTML dokumenta. U prijašnjoj verziji HTML4, HTML dokument bi izgledao ovako:
@@ -97,6 +106,7 @@
 							<img src="/images/html5primjer.jpg" alt="HTML5 primjer" style="width: 100%;"/>
 					</div>
 				</p>
+				<h2 class="sub-header" id="new-semantic">Semantičke oznake</h2>
 				<p class="margined-paragraph">
 					Sljedeče, dodane su nove semantičke oznake. Oznake poput <code>&lt;section /></code>, <code>&lt;article /></code>,
 					<code>&lt;footer /></code> pomažu nam bolje rasporediti elemente unutar HTML dokumenta te svakom elementu
@@ -117,11 +127,11 @@
 						<li><code>&lt;footer></code> - <span>predstavlja podnožje za odjeljak i može sadržavati podatke o autoru, autorskim pravima i ostale informacije</span></li>
 					</ol>
 				</p>
+				<h2 class="sub-header" id="new-input">Tipovi unosa</h2>
 				<p class="margined-paragraph">
 					Prijašnje spomenut <code>&lt;input /></code> element, koji služi za korisnički unos datuma, e-maila i drugih informacija
 					, je dobio nekoliko novih tipova. Oni se koriste na sljedeči način: <code>&lt;input type="tip_unosa" /></code>
 						<ol class="input-types-list">
-						<strong><h2>Novi tipovi unosa</h2></strong>
 						<li><strong>tel</strong> - definira polje za unos telefonskog broja
 							<div><form><input type="tel"/></form></div>
 						</li>
@@ -177,6 +187,7 @@
 			<div><form><input required type="text" placeholder="Ime" style="margin: 4px 0px;"/></form></div> Navedeni element ima <code>placeholder="Ime"</code>
 		te on izgleda ovako: <code>&lt;input required type="text" placeholder="Ime"/></code></p>
 				</p>
+				<h2 class="sub-header" id="new-audio-video">Audio i video</h2>
 				<p class="margined-paragraph">
 					Još neki od važnih elemenata dodanih u HTML5 su <code>&lt;video /></code> i <code>&lt;audio /></code>.
 					Ukratko, oni nam daju mogućnost reproduciranja videja i zvuka. Uz njih dolazi još i element <code>&lt;source /></code>,
