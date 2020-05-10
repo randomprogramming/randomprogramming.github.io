@@ -48,6 +48,15 @@
 				</li>
 				<li>
 					<a href="#html-5-1" class="inner-nav-link">HTML 5.1</a>
+					<ul>
+						<li><a href="#picture-srcset" class="inner-nav-link">Picture element i srcset atribut</a></li>
+					</ul>
+					<ul>
+						<li><a href="#new-input-52" class="inner-nav-link">Novi tipovi unosa</a></li>
+					</ul>
+					<ul>
+						<li><a href="#summary-details" class="inner-nav-link">Details i summary elementi</a></li>
+					</ul>
 				</li>
 				<li>
 					<a href="#html-5-2" class="inner-nav-link">HTML 5.2</a>
@@ -224,13 +233,62 @@
 				<h1 class="version-header" id="html-5-1">HTML 5.1</h1>
 				<h3 class="released-header">Objavljeno: 1. studeni 2016.</h3>
 				<p class="margined-paragraph">
-					This specification defines the 5th major version, first minor revision of the core
-					language of the World Wide Web: the <abbr title="Hypertext Markup Language">HTML</abbr>.
-					In this version, new features continue to be introduced to help Web application authors,
-					new elements continue to be introduced based on research into prevailing authoring
-					practices, and special attention continues to be given to defining clear conformance
-					criteria for user agents in an effort to improve interoperability.
+					Ova specifikacija definira petu glavnu verziju, te prvu manju reviziju osnovnog jezika
+					World Wide Weba: HTML. U ovoj se verziji i dalje uvode nove karakteristike kako bi se pomoglo
+					autorima web aplikacija, novi elementi se i dalje uvode, te dobivamo nekolicinu novih atributa.
+					Naravno, razlika između verzija HTML 5.0 i HTML 5.1 nije ni približno velika kao razlika između
+					HTML 4 i HTML 5.0.
 				</p>
+				<h2 class="sub-header" id="picture-srcset">Picture element i srcset atribut</h2>
+				<p class="margined-paragraph">
+					Dodan je novi element, <code>&lt;picture /></code>, koji omogućuje prikazivanje različitih slika
+					ovisno o rezoluciji preglednika.
+					
+				</p>
+				<code>
+						&lt;picture><br />
+   &nbsp;&nbsp;&lt;source media="(min-width: 1500px)" srcset="img_pink_flowers.jpg"><br />
+   &nbsp;&nbsp;&lt;source media="(min-width: 1000px)" srcset="img_white_flower.jpg"><br />
+   &nbsp;&nbsp;&lt;img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"><br />
+&lt;/picture>
+					</code>
+					<div style="margin-top: 1rem">
+					<picture>
+						<source srcset="https://i.picsum.photos/id/366/200/300.jpg" media="(min-width: 1500px)">
+						<source srcset="https://i.picsum.photos/id/316/200/300.jpg" media="(min-width: 1000px)">
+  					<img src="https://i.picsum.photos/id/326/200/300.jpg" alt="MDN">
+					</picture>
+					</div>
+					<p class="margined-paragraph">
+						Tako će se gore navedena slika mijenjati, ovisno o širini preglednika. <code>srcset</code> atribut
+						je veoma sličan <code>src</code> atributu, ali <code>srcset</code> daje mogućnost navođenja više
+						izvora. Npr. <code>srcset="elva-fairy-480w.jpg,
+             elva-fairy-800w.jpg"</code>
+					</p>
+					
+					<h2 class="sub-header" id="new-input-52">Novi tipovi unosa</h2>
+					<p class="margined-paragraph">
+						Kao i u prošloj verziji, imamo neke nove tipove unosa.
+						<code>week</code> i <code>month</code> su dodani te služe za unos točno nekog tjedna
+						ili mjeseca.
+						<form><input type="week"/></form>
+						<form><input type="month" style="margin-top: 1rem;"/></form>
+					</p>
+					
+					<h2 class="sub-header" id="summary-details">Details i summary elementi</h2>
+					<p class="margined-paragraph">
+						Dodan je novi element, <code>&lt;details /></code> koji se koristi zajedno sa
+						novim <code>&lt;summary /></code> elementom. Zajedno daju mali "meni" koji se
+						može kliknuti za više detalja, te on izgleda ovako:
+						<div>
+							<details>
+								<summary>
+									Summary
+								</summary>
+								Details
+							</details>
+						</div>
+					</p>
 			</section>
 			<section>
 				<h1 class="version-header" id="html-5-2">HTML 5.2</h1>
