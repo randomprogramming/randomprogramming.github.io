@@ -362,3 +362,20 @@ footer a {
 		white-space: normal;
 	}
 }
+
+/* CSS of page about CSS */
+
+@keyframes animation-demo {
+	from {
+		background-color: red;
+	}
+	to {
+		background-color: green;
+	}
+}
+
+.animation-demo {
+	padding: 5px;
+	background-color: red;
+	animation: animation-demo 4s both infinite;
+}

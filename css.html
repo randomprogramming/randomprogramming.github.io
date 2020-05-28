@@ -9,7 +9,7 @@
 			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
-		<title>HTML&CSS Versions</title>
+		<title>HTML&CSS Verzije</title>
 	</head>
 	<body>
 		<nav>
@@ -23,7 +23,7 @@
 
 		<aside>
 			<div>
-				<h3 class="navigation-title">Navigation</h3>
+				<h3 class="navigation-title">Navigacija</h3>
 			</div>
 			<ul>
 				<li><a href="#css-main" class="inner-nav-link">CSS</a></li>
@@ -37,13 +37,48 @@
 			<section>
 				<h1 class="version-header" id="css-main">CSS</h1>
 				<p class="margined-paragraph">
-					<abbr title="Cascading Style Sheets">CSS</abbr> is a style sheet language used for
-					describing the presentation of a document written in a markup language like
-					<abbr title="Hypertext Markup Language">HTML</abbr>.
-					<abbr title="Cascading Style Sheets">CSS</abbr> is a cornerstone technology of the World
-					Wide Web, alongside <abbr title="Hypertext Markup Language">HTML</abbr> and
-					<a href="https://en.wikipedia.org/wiki/JavaScript" class="paragraph-link">JavaScript</a>.
+					<abbr title="Cascading Style Sheets">CSS</abbr> je jezik stiliziranja koji služi za
+					opisivanje izgled dokumenta napisanog na jeziku kao što je HTML. CSS je temeljna
+					tehnologija World Wide Weba, zajedno s HTML-om i JavaScript-om.
 				</p>
+				<p class="margined-paragraph">
+					CSS je dizajniran tako da omogući odvajanje prezentacije i sadržaja, uključujući izgled,
+					boje i fontove. Ovo odvajanje može poboljšati dostupnost sadržaja, pružiti veću
+					fleksibilnost i kontrolu u specificiranju karakteristika prezentacije, omogućiti više web
+					stranica za dijeljenje oblikovanja specificiranjem odgovarajućeg CSS-a u zasebnoj .css
+					datoteci i smanjiti složenost i ponavljanje strukturnog sadržaja.
+				</p>
+			</section>
+			<section>
+				<h2 class="sub-header" id="html-main">CSS animacije</h2>
+				<p class="margined-paragraph">
+					CSS animacije dopuštaju animaciju HTML elemenata bez korištenja JavaScript-a.
+				</p>
+				<div class="animation-demo">
+					Animacije!
+				</div>
+				<p class="margined-paragraph">
+					Naravno, animacije nisu podržane na starijim preglednicima. Animacije se mogu stvarati na
+					dva načina. Prvi način je uz pomoč <code>transition</code> CSS svojstva. Sljedeči način
+					stvaranja animacija je uz pomoč <code>@keyframe</code> pravilo. Ako bi koristili
+					<code>@keyframe</code>
+					za gore navedeni primjer, to bi izgledalo ovako:
+					<code>
+						@keyframes animation-demo {<br />
+						&nbsp;&nbsp;from { background-color: red; } <br />
+						&nbsp;&nbsp;to { background-color: green; } <br />
+						}
+						<br />
+						.animation-demo { <br />
+						&nbsp;&nbsp;padding: 5px; <br />
+						&nbsp;&nbsp;background-color: red;<br />
+						&nbsp;&nbsp;animation: animation-demo 4s both infinite;<br />
+						}
+					</code>
+				</p>
+			</section>
+			<section>
+				<h2 clas="sub-header">CSS kalkukacije</h2>
 			</section>
 		</main>
 
