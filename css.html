@@ -27,6 +27,9 @@
 			</div>
 			<ul>
 				<li><a href="#css-main" class="inner-nav-link">CSS</a></li>
+				<li><a href="#animations" class="inner-nav-link">CSS animacije</a></li>
+				<li><a href="#calculations" class="inner-nav-link">CSS kalkukacije</a></li>
+				<li><a href="#gradients" class="inner-nav-link">CSS gradijenti</a></li>
 			</ul>
 		</aside>
 
@@ -48,9 +51,13 @@
 					stranica za dijeljenje oblikovanja specificiranjem odgovarajućeg CSS-a u zasebnoj .css
 					datoteci i smanjiti složenost i ponavljanje strukturnog sadržaja.
 				</p>
+				<p class="margined-paragraph">
+					Sada ćemo objasnit neka svojstva CSS-a koja su prisutna samo u novijim verzijama, te koje
+					možda još nisu podržane u najnovijim verzijama web preglednika.
+				</p>
 			</section>
 			<section>
-				<h2 class="sub-header" id="html-main">CSS animacije</h2>
+				<h2 class="sub-header" id="animations">CSS animacije</h2>
 				<p class="margined-paragraph">
 					CSS animacije dopuštaju animaciju HTML elemenata bez korištenja JavaScript-a.
 				</p>
@@ -78,7 +85,41 @@
 				</p>
 			</section>
 			<section>
-				<h2 clas="sub-header">CSS kalkukacije</h2>
+				<h2 class="sub-header" id="calculations">CSS kalkukacije</h2>
+				<p class="margined-paragraph">
+					CSS kalkulacije nam dopuštaju kalkulaciju jednostavnijih jednadžba uz pomoč
+					<code>calc()</code> funkcije.
+				</p>
+				<div class="calc-example">
+					Primjer kalkulacije
+				</div>
+				<code>
+					width: calc(10vw + 30px + 10rem);
+				</code>
+				<div class="margined-paragraph">
+					Jedno važno svojstvo <code>calc()</code> funkcije je da nam dopušta zbrajanje različitih
+					jedinica za veličinu. Tako smo npr. u ovom primjeru zbrajali <code>vw</code> jedinice,
+					<code>px</code> jedinice i <code>rem</code> jedinice.
+				</div>
+			</section>
+			<section>
+				<h2 class="sub-header" id="gradients">CSS gradijenti</h2>
+				<p class="margined-paragraph">
+					Gradijenti nam omogućuju stvaranje svakavih slika koje se večinom koriste kao pozadine na
+					web stranicama.
+				</p>
+				<div class="flex-wrap">
+					<div class="grad-example grad-1"></div>
+					<div class="grad-example grad-2"></div>
+					<div class="grad-example grad-3"></div>
+				</div>
+				<p class="margined-paragraph">
+					Ima puno vrsta gradijenta, u prva dva primjera korišten je <code>linear-gradient()</code>,
+					dok je u trećem primjeru korišten <code>radial-gradient()</code>. Ove funkcije primaju
+					puno različitih parametra, te je potencijal s njima ogroman. Za generiranje gradijenta se
+					često koriste generatori poput
+					<a href="https://www.colorzilla.com/gradient-editor/">ovog.</a>
+				</p>
 			</section>
 		</main>
 
