@@ -469,3 +469,24 @@ footer a {
 .grad-3 {
 	background: radial-gradient(#e66465, #9198e5);
 }
+
+.font-example {
+	margin: 1rem 0 1rem 1rem;
+	font-size: 24px;
+}
+
+.font-1 {
+	font-family: "Metal Mania";
+}
+
+.font-2 {
+	font-family: "Lexend Tera", sans-serif;
+}
+
+.font-3 {
+	font-family: "Tenali Ramakrishna", sans-serif;
+}
+
+.font-4 {
+	font-family: "Sriracha", cursive;
+}

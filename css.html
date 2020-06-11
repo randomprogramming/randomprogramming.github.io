@@ -9,6 +9,19 @@
 			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet" />
 		<title>HTML&CSS Verzije</title>
 	</head>
 	<body>
@@ -30,6 +43,7 @@
 				<li><a href="#animations" class="inner-nav-link">CSS animacije</a></li>
 				<li><a href="#calculations" class="inner-nav-link">CSS kalkukacije</a></li>
 				<li><a href="#gradients" class="inner-nav-link">CSS gradijenti</a></li>
+				<li><a href="#fonts" class="inner-nav-link">Fontovi</a></li>
 			</ul>
 		</aside>
 
@@ -119,6 +133,33 @@
 					puno različitih parametra, te je potencijal s njima ogroman. Za generiranje gradijenta se
 					često koriste generatori poput
 					<a href="https://www.colorzilla.com/gradient-editor/">ovog.</a>
+				</p>
+			</section>
+			<section>
+				<h2 class="sub-header" id="fonts">Fontovi</h2>
+				<p class="margined-paragraph">
+					Možda je teško za vjerovati, ali prije samo nekoliko godina, bilo je samo nekolocina
+					fontova koja su se mogla koristiti na web-stranicama. Sada imamo pomagala poput
+					<a href="https://fonts.google.com/">Google Fonts</a> koji nam dopuštaju dodavanje fontova
+					na web stranice bez ikakvih problema.
+				</p>
+				<div class="font-example font-1">Primjer fonta broj 1</div>
+				<div class="font-example font-2">Primjer fonta broj 2</div>
+				<div class="font-example font-3">Primjer fonta broj 3</div>
+				<div class="font-example font-4">Primjer fonta broj 4</div>
+				<p class="margined-paragraph">
+					Fontovi se mogu uvesti u web stranice na nekoliko načina. Može se koristiti
+					<code>&lt;link /></code> element u HTML-u, ili pak uz pomoč <code>@import</code> pravila.
+				</p>
+				<p>
+					U HTML-u: <code>&lt;link href="link-fonta" rel="stylesheet"></code> <br />
+					U CSS-u: <code>@import url('link-fonta');</code> Nakon što uvezemo neki font, možemo ga
+					koristiti u CSS-u uz pomoč <code>font-family</code> pravila. <br />
+					<code>
+						.font-1 { <br />
+						&nbsp;&nbsp;font-family: "Ime Fonta"; <br />
+						}
+					</code>
 				</p>
 			</section>
 		</main>
