@@ -514,3 +514,19 @@ footer a {
 		color: black;
 	}
 }
+
+[class*="col-"] {
+	float: left;
+	background-color: #3c2bf2;
+	color: white;
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+	width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+	[class*="col-"] {
+		width: 100%;
+	}
+}
