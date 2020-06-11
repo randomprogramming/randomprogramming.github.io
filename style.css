@@ -490,3 +490,27 @@ footer a {
 .font-4 {
 	font-family: "Sriracha", cursive;
 }
+
+.border-example {
+	text-align: center;
+	padding: 20px;
+	margin: 0 auto;
+	border: 30px solid transparent;
+	border-image: url(https://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/border.png)
+		30 30 round;
+}
+
+.media-query-example {
+	background-color: green;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	color: white;
+}
+
+@media only screen and (max-width: 768px) {
+	.media-query-example {
+		background-color: yellow;
+		color: black;
+	}
+}

@@ -44,6 +44,8 @@
 				<li><a href="#calculations" class="inner-nav-link">CSS kalkukacije</a></li>
 				<li><a href="#gradients" class="inner-nav-link">CSS gradijenti</a></li>
 				<li><a href="#fonts" class="inner-nav-link">Fontovi</a></li>
+				<li><a href="#borders" class="inner-nav-link">Border slike</a></li>
+				<li><a href="#queries" class="inner-nav-link">Media Queries</a></li>
 			</ul>
 		</aside>
 
@@ -158,6 +160,68 @@
 					<code>
 						.font-1 { <br />
 						&nbsp;&nbsp;font-family: "Ime Fonta"; <br />
+						}
+					</code>
+				</p>
+			</section>
+			<section>
+				<h2 class="sub-header" id="borders">Border slike</h2>
+
+				<p class="margined-paragraph">
+					Još jedno važno novo svojstvo je mogučnost korištenja slika kao border.
+				</p>
+				<div class="border-example">Primjer slikovitog bordera!</div>
+				<p class="margined-paragraph">
+					Slika korištena kao border:
+				</p>
+				<div>
+					<img
+						src="https://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/border.png"
+						alt="border"
+					/>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="sub-header" id="queries">Media Queries</h2>
+				<p class="margined-paragraph">
+					Jedno od najvažnijih dodataka u novijim verzijama CSS-a su media queries. Oni nam pružaju
+					puno mogučnosti, ali najvažnija je mogučnost prikaza stranice drugačije za mobitele,
+					tablete i računala, ovisno o veličini ekrana.
+				</p>
+				<h3><strong>Računalo</strong></h3>
+				<img src="https://www.w3schools.com/css/rwd_desktop.png" alt="prikaz na racunalu" />
+				<h3 style="margin-top: 3rem;"><strong>Mobitel</strong></h3>
+				<img src="https://www.w3schools.com/css/rwd_phone.png" alt="prikaz na mobitelu" />
+				<p class="margined-paragraph">
+					Možemo mijenjati boju ove kocke ovisno o tome je li stranica otvorena na mobitelu ili na
+					računalu:
+				</p>
+				<div class="media-query-example">
+					Kocka
+				</div>
+				<p class="margined-paragraph">
+					Sada će pozadina ove kocke biti zelena na računalu sa bijelim tekstom, dok će se na
+					mobitelu i ostalim manjim ekranima prikazivati kao žuta kocka sa crnim tekstom.
+				</p>
+				<p class="margined-paragraph">
+					To smo postigli ovako: <br />
+					dali smo kocki pozadinsku boju i boju teksta uz pomoč običnog CSS-a <br />
+					<code>
+						.media-query-example { <br />
+						&nbsp;&nbsp;background-color: green; <br />
+						&nbsp;&nbsp;color: white; <br />
+						}
+					</code>
+					<br />
+					Zatim smo napravili media query pravilo koje će promijeniti pozadinsku boju kada je ekran
+					manji od <code>768px</code>: <br />
+					<code>
+						@media only screen and (max-width: 768px) { <br />
+						&nbsp;&nbsp;.media-query-example { <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;background-color: yellow; <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;color: black; <br />
+						&nbsp;&nbsp;} <br />
 						}
 					</code>
 				</p>
