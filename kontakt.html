@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Mia - Kontakt</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="./index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav id="mobile-nav" role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="/">
+            <li>Naslovnica</li>
+          </a>
+          <a href="#">
+            <li>Deserti</li>
+          </a>
+          <a href="/kontakt.html">
+            <li>Kontakt</li>
+          </a>
+          <a href="#">
+            <li>Moj Račun</li>
+          </a>
+          <a href="https://erikterwan.com/" target="_blank">
+            <li>Košarica</li>
+          </a>
+        </ul>
+      </div>
+      <div class="h-full">
+        <img src="./images/logo.png" alt="Logo" class="h-full" />
+      </div>
+    </nav>
+    <nav id="desktop-nav">
+      <div>
+        <img src="./images/logo.png" alt="Logo" style="height: 48px" />
+      </div>
+      <div class="flex flex-row space-x-12">
+        <div>
+          <a href="/" class="hover-link">Naslovnica</a>
+        </div>
+        <div>
+          <a href="#" class="hover-link">Deserti</a>
+        </div>
+        <div>
+          <a href="/kontakt.html" class="hover-link">Kontakt</a>
+        </div>
+      </div>
+      <div class="flex flex-row space-x-12">
+        <div>
+          <a href="#">
+            <img src="./images/user.svg" alt="account icon" />
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="./images/cart.svg" alt="cart icon" />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <script>
+      window.onscroll = () => {
+        if (window.scrollY > 10) {
+          const navs = document.getElementsByTagName("nav");
+          for (const n of navs) {
+            n.classList.add("nav_shadow");
+          }
+        } else {
+          const navs = document.getElementsByTagName("nav");
+          for (const n of navs) {
+            n.classList.remove("nav_shadow");
+          }
+        }
+      };
+    </script>
+    <main>
+      <section class="flex-1 mt-16 w-full flex justify-center align-center">
+        <div class="space-y-8">
+          <h1>Kontaktirajte nas</h1>
+          <div>
+            <h2>Ime</h2>
+            <input
+              type="text"
+              placeholder="Ime"
+              class="py-2 px-4 rounded-md text-lg shadow-md"
+              style="max-width: 380px"
+            />
+          </div>
+          <div>
+            <h2>Prezime</h2>
+            <input
+              type="text"
+              placeholder="Prezime"
+              class="py-2 px-4 rounded-md text-lg shadow-md"
+              style="max-width: 380px"
+            />
+          </div>
+          <div>
+            <h2>Email</h2>
+            <input
+              type="email"
+              placeholder="Email"
+              class="py-2 px-4 rounded-md text-lg shadow-md"
+              style="max-width: 380px"
+            />
+          </div>
+          <div>
+            <h2>Poruka</h2>
+            <textarea
+              style="max-width: 380px"
+              class="py-2 px-4 rounded-md text-lg shadow-md"
+            >
+            </textarea>
+          </div>
+          <div>
+            <button style="max-width: 380px" class="green-button w-full">
+              Pošalji
+            </button>
+          </div>
+        </div>
+      </section>
+      <footer style="margin-bottom: 0; padding-bottom: 0">
+        <div>
+          <ul class="flex flex-row justify-between">
+            <li class="p-4">
+              <img
+                src="https://images.asos-media.com/navigation/visa-png"
+                alt="VISA"
+                style="height: 24px"
+              />
+            </li>
+            <li class="p-4">
+              <img
+                src="https://images.asos-media.com/navigation/mastercard-png"
+                alt="Mastercard"
+                style="height: 24px"
+              />
+            </li>
+            <li class="p-4">
+              <img
+                src="https://images.asos-media.com/navigation/pay-pal-png"
+                alt="PayPal"
+                style="height: 24px"
+              />
+            </li>
+            <li class="p-4">
+              <img
+                src="https://images.asos-media.com/navigation/american-express-png"
+                alt="American Express"
+                style="height: 24px"
+              />
+            </li>
+            <li class="p-4">
+              <img
+                src="https://images.asos-media.com/navigation/visa-electron-png"
+                alt="VISA Electron"
+                style="height: 24px"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="bg-c-grey">
+          <div class="flex flex-row justify-between px-16 py-4 bg-black">
+            <a
+              class="bg-white p-2 rounded-full facebook-link"
+              href="https://www.facebook.com/meetmia/"
+              target="_blank"
+            >
+              <img
+                src="./images/facebook.svg"
+                style="height: 32px; width: auto"
+              />
+            </a>
+            <a
+              class="bg-white p-2 rounded-full instagram-link"
+              href="https://www.instagram.com/meetmiacakes/?hl=en"
+              target="_blank"
+            >
+              <img
+                src="./images/instagram.svg"
+                style="height: 32px; width: auto"
+              />
+            </a>
+            <a
+              class="bg-white p-2 rounded-full delivery-link"
+              href="https://wolt.com/en/hrv/zagreb/restaurant/meet-mia"
+              target="_blank"
+            >
+              <img
+                src="./images/delivery.svg"
+                style="height: 32px; width: auto"
+              />
+            </a>
+          </div>
+          <div class="flex items-center justify-center py-8">
+            <div class="max-w-md">
+              <div class="flex flex-row items-center">
+                <img src="./images/logo.png" alt="Logo" style="width: 64px" />
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    style="width: 180px"
+                    class="py-2 px-4 rounded-md ml-2"
+                  />
+                </div>
+              </div>
+              <div class="mt-2 flex flex-row">
+                <div class="flex-1"></div>
+                <div>
+                  <button class="green-button text-sm">Pretplati me</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
