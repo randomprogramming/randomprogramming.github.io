@@ -330,3 +330,13 @@ section {
 nav a {
   font-weight: 600;
 }
+
+.hover-img {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.hover-img:hover {
+  filter: grayscale(50%);
+  border-radius: 24px;
+}
